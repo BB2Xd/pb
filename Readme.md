@@ -2,7 +2,7 @@
 
 This is a Pornhub bot made for telegram. It can search and download Pornhub videos for you
 
-Find a Demo Here - [@SjPornhub_bot](https://telegram.me/SjPornhub_bot)
+
 
 # Deployment
 
