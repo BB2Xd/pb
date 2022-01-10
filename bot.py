@@ -41,7 +41,7 @@ def link_fil(filter, client, update):
     if "www.pornhub" in update.text:
         return True
     else:
-        return False
+        return True
 
 link_filter = filters.create(link_fil, name="link_filter")
 
