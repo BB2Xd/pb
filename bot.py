@@ -113,7 +113,7 @@ async def search(client, InlineQuery : InlineQuery):
 
 @app.on_message(filters.command("start"))
 async def start(client, message : Message):
-    await message.reply(f"Hello @{message.from_user.username},\n"
+    await message.reply(f"Hello User! - @{message.from_user.username},\n"
                         "━━━━━━━━━━━━━━━━━━━━━\n"
                         "This Bot Can Search PornHub\n"
                         "Videos & Download Them For You\n"
@@ -164,7 +164,7 @@ async def download_video(client, callback : CallbackQuery):
 
     for file in os.listdir('.'):
         if file.endswith(".mp4"):
-            await callback.message.reply_video(f"{file}", caption="**Here Is your Requested Video**\n@SJ_Bots",
+            await callback.message.reply_video(f"{file}", caption="**Here Is your Requested Video**\nBy NC🤫",
                                 reply_markup=InlineKeyboardMarkup([[btn1, btn2]]))
             os.remove(f"{file}")
             break
