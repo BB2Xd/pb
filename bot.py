@@ -164,7 +164,7 @@ async def download_video(client, callback : CallbackQuery):
 
     for file in os.listdir('.'):
         if file.endswith(".mp4"):
-            await callback.message.reply_video(f"{file}", caption="**Here Is your Requested Video**\nBy NC🤫",
+            await callback.message.reply_video(f"{file}", caption="**Here Is your Requested Video**\n\n**TITLE** : `{vid.title}`\n\nBy NC🤫",
                                 reply_markup=InlineKeyboardMarkup([[btn1, btn2]]))
             os.remove(f"{file}")
             break
